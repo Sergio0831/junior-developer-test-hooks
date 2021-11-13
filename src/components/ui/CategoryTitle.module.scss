@@ -1,0 +1,14 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.title {
+  @include font(
+    $font-size: $font-xxlarge,
+    $font-weight: $fw-regular,
+    $line-height: $lh-large
+  );
+
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+  text-transform: capitalize;
+}

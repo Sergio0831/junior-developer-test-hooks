@@ -1,0 +1,10 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.list {
+  display: $d-grid;
+  grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
+  column-gap: $g-1 * 4;
+  row-gap: $g-1 * 10;
+  justify-items: $justify-center;
+}

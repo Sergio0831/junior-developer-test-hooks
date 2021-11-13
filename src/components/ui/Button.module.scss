@@ -1,0 +1,15 @@
+@use "../../styles/variables" as *;
+
+%button {
+  cursor: pointer;
+}
+
+.round {
+  @extend %button;
+
+  width: 5.2rem;
+  height: 5.2rem;
+  border: none;
+  border-radius: 50%;
+  background-color: $color-green;
+}

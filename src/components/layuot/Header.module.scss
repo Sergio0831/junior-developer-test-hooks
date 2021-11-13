@@ -1,0 +1,38 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.header {
+  height: 8rem;
+
+  @include centered-flex(
+    $justify-content: $justify-between,
+    $align-items: $align-center
+  );
+}
+
+.actions {
+  display: $d-flex;
+  column-gap: $g-1 * 2.2;
+}
+
+.currencies {
+  span {
+    @include font(
+      $font-weight: $fw-medium,
+      $font-size: $font-small,
+      $line-height: $lh-large
+    );
+
+    margin-right: $m-1;
+  }
+}
+
+.cart {
+  padding-top: 0.2rem;
+
+  @include centered-flex($align-items: $align-center);
+
+  svg {
+    fill: $color-grey;
+  }
+}
